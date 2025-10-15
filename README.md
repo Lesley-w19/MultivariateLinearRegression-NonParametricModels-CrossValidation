@@ -4,7 +4,16 @@
 
 **Objective:** Build models to predict the disease progression one year after baseline. Models include univariate polynomial regressions (BMI), multivariate polynomial models, Decision Trees, kNNs, and Logistic Regression classifiers (as a screening classifier). Evaluate using R², MAE, and MAPE; use a train/validation/test split.
 
-### Part 1: 
+### Part 1: Framing the Problem
+
+We used the Diabetes dataset to predict disease progression one year after baseline.
+This is a regression problem because the target is a continuous number, not a category.
+We want to see how patient features like BMI, age, and blood pressure relate to that progression.
+
+- Splitting the Data
+
+We divided the dataset into Train (75%), Validation (10%), and Test (15%).
+The validation set helps us pick the best model, while the test set checks how it performs on unseen data.
 
 ### Part 2: Classification model performance for the screening classifiers 
 - (the Logistic Regression models) 
